@@ -43,7 +43,7 @@
                                         <div class="port-item p-4 bg-primary" data-toggle="collapse" data-target="#home">
                                             <i class="fa fa-home d-block"></i> Home
                                         </div>
-                                        <div class="port-item p-4 bg-success">
+                                        <div class="port-item p-4 bg-success" data-toggle="collapse" data-target="#resume">
                                             <i class="fa fa-graduation-cap d-block"></i> Resume
                                         </div>
                                         <div class="port-item p-4 bg-warning">
@@ -90,6 +90,66 @@
                 </div>
             </div>
         </div>
+
+        <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima, officiis animi ducimus consequatur natus.</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where have I Worked?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam iusto quae ut, eos explicabo.</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Yunkai</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, nisi.</p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Position: Full Stack Developer
+                            </p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Phone: (555) 555-5555
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2011 - 2012</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Bravos</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, nisi.</p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Position: Full Stack Developer Leader
+                            </p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Phone: (555) 555-5555
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2013 - 2014</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Meereen</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos, nisi.</p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Position: Full Stack Developer Queen
+                            </p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Phone: (555) 555-5555
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2014 - 2015</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer id="main-footer" class="p-5 bg-dark text-dark">
             <div class="row">
@@ -103,5 +163,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.port-item').click(function(){
+            $('.collapse').collapse('hide');
+        });
+    </script>
 </body>
 </html>
